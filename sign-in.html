@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111111;
+        }
+
+        .signin-container {
+            width: 380px;
+            padding: 40px;
+            background: #1c1c1c;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .signin-container h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .signin-container p {
+            color: #aaaaaa;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            color: white;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #444444;
+            border-radius: 8px;
+            background: #292929;
+            color: white;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .input-group input:focus {
+            border-color: #a78bfa;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 13px;
+        }
+
+        .remember {
+            color: #bbbbbb;
+        }
+
+        .forgot {
+            color: #a78bfa;
+            text-decoration: none;
+        }
+
+        .signin-btn {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background: #a78bfa;
+            color: #111111;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signin-btn:hover {
+            background: #c4b5fd;
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 25px;
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+
+        .signup a {
+            color: #a78bfa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 450px) {
+            .signin-container {
+                width: 90%;
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signin-container">
+
+        <h1>Welcome Back</h1>
+        <p>Sign in to your account</p>
+
+        <form>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <div class="options">
+
+                <label class="remember">
+                    <input type="checkbox">
+                    Remember me
+                </label>
+
+                <a href="#" class="forgot">Forgot Password?</a>
+
+            </div>
+
+            <button type="submit" class="signin-btn">
+                Sign In
+            </button>
+
+        </form>
+
+        <div class="signup">
+            Don't have an account?
+            <a href="#">Sign Up</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
